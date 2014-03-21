@@ -67,6 +67,7 @@ BOARD_SEPOLICY_UNION += \
     secril.te \
     system.te \
     ueventd.te \
+    vold.te \
     wpa_supplicant.te
 
 # TWRP Recovery
