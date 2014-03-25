@@ -15,6 +15,5 @@
 -->
 
 <resources>
-    <bool name="is_tablet">true</bool>
     <bool name="allow_rotation">true</bool>
 </resources>
