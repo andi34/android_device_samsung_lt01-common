@@ -32,7 +32,7 @@ TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 800
 
 # No flashlight, no Torch app
-TARGET_NO_CAM_FLASH := false
+TARGET_NO_CAM_FLASH := true
 
 # Init files
 PRODUCT_COPY_FILES := \
