@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2013 The CyanogenMod Project
+# Copyright (C) 2014 SlimRoms
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -25,18 +26,11 @@ BOARD_KERNEL_BASE := 0x10000000
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2235564032
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 12813598720
 
-# F2FS filesystem
-TARGET_USERIMAGES_USE_F2FS := true
-
-# exFAT kernel support
-KERNEL_EXFAT_MODULE_NAME := "exfat"
-
 # Graphics
 TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := false
 
 # Recovery
 BOARD_UMS_LUNFILE := "/sys/class/android_usb/android0/f_mass_storage/lun/file"
-BOARD_RECOVERY_SWIPE := true
 
 # Sensors
 BOARD_USE_LEGACY_SENSORS_FUSION := false
@@ -71,3 +65,24 @@ BOARD_SEPOLICY_UNION += \
     system.te \
     ueventd.te \
     wpa_supplicant.te
+
+# TWRP Recovery
+DEVICE_RESOLUTION := 800x1280
+RECOVERY_SDCARD_ON_DATA := true
+TW_INTERNAL_STORAGE_PATH := "/data/media"
+TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
+TW_EXTERNAL_STORAGE_PATH := "/external_sd"
+TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
+BOARD_HAS_NO_REAL_SDCARD := true
+SP1_NAME := "efs"
+SP1_BACKUP_METHOD := files
+SP1_MOUNTABLE := 1
+SP2_NAME := "modem"
+SP2_BACKUP_METHOD := image
+SP2_MOUNTABLE := 0
+TARGET_USERIMAGES_USE_EXT4 := true
+TW_NO_USB_STORAGE := true
+TW_INCLUDE_FUSE_EXFAT := true
+HAVE_SELINUX := true
+TW_NO_REBOOT_BOOTLOADER := true
+TW_HAS_DOWNLOAD_MODE := true

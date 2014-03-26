@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2013 The CyanogenMod Project
+# Copyright (C) 2014 SlimRoms
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -31,7 +32,7 @@ TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 800
 
 # No flashlight, no Torch app
-TARGET_HAS_CAM_FLASH := false
+TARGET_NO_CAM_FLASH := false
 
 # Init files
 PRODUCT_COPY_FILES := \
@@ -60,13 +61,6 @@ PRODUCT_PACKAGES += \
 # Packages
 PRODUCT_PACKAGES += \
     tinyplay
-
-# F2FS filesystem
-PRODUCT_PACKAGES += \
-    mkfs.f2fs \
-    fsck.f2fs \
-    fibmap.f2fs \
-    f2fstat
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.cm.hardware.cabc=/sys/class/mdnie/mdnie/cabc
