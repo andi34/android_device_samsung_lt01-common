@@ -28,7 +28,7 @@ PRODUCT_AAPT_CONFIG := normal large tvdpi hdpi
 PRODUCT_AAPT_PREF_CONFIG := tvdpi
 
 # No flashlight, no Torch app
-TARGET_HAS_CAM_FLASH := false
+TARGET_NO_CAM_FLASH := true
 
 # Init files
 PRODUCT_COPY_FILES := \
