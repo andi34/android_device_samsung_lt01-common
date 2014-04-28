@@ -29,9 +29,6 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 12813598720
 # External apps on SD
 TARGET_EXTERNAL_APPS = sdcard1
 
-# Graphics
-TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := false
-
 # Recovery
 BOARD_UMS_LUNFILE := "/sys/class/android_usb/android0/f_mass_storage/lun/file"
 
