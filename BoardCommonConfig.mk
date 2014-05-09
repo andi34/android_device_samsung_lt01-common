@@ -39,7 +39,7 @@ BOARD_UMS_LUNFILE := "/sys/class/android_usb/android0/f_mass_storage/lun/file"
 BOARD_USE_LEGACY_SENSORS_FUSION := false
 
 # Legacy driver compatibility
-COMMON_GLOBAL_CFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS
+# COMMON_GLOBAL_CFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS
 
 # Button backlight
 BOARD_EXYNOS4X12_TABLET_HAS_LED_BUTTONS := true
