@@ -63,7 +63,7 @@ PRODUCT_PACKAGES += \
     tinyplay
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.cm.hardware.cabc=/sys/class/mdnie/mdnie/cabc
+    ro.cm.hardware.cabc=/sys/class/mdnie/mdnie/cabc \
     ro.hwui.disable_scissor_opt=true
 
 # Media profiles
