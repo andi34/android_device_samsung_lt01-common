@@ -70,6 +70,10 @@ BOARD_SEPOLICY_UNION += \
     vold.te \
     wpa_supplicant.te
 
+# TVOut & HDMI
+BOARD_USE_SECTVOUT := true
+BOARD_USES_SKTEXTBOX := true
+
 # TWRP Recovery
 DEVICE_RESOLUTION := 800x1280
 RECOVERY_SDCARD_ON_DATA := true
