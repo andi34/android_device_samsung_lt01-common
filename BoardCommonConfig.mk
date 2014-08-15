@@ -29,6 +29,9 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 12813598720
 # exFAT kernel support
 KERNEL_EXFAT_MODULE_NAME := "exfat"
 
+# Graphics
+TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := false
+
 # Recovery
 BOARD_UMS_LUNFILE := "/sys/class/android_usb/android0/f_mass_storage/lun/file"
 
